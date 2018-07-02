@@ -84,6 +84,7 @@ namespace stringkezeles
             Console.WriteLine("-----------------------------------");
             List<string> DifferentWords = new List<string>();
             DifferentWords.Clear();
+
             for(int i=0;i< JustWords.Count();i++)
             {
                 if(!DifferentWords.Contains(JustWords[i]))
@@ -91,6 +92,7 @@ namespace stringkezeles
                     DifferentWords.Add(JustWords[i]);
                 }
             }
+
             Console.WriteLine("Unique words: ");
             WriteList(DifferentWords);
 
